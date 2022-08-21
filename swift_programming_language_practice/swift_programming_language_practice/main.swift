@@ -55,7 +55,6 @@ print(Float.max)
 
 let capitalOfIndia = "Delhi" //capitalOfIndia is of a type string and is a constant
 print(type(of: capitalOfIndia))
-*/
 
 let three = 3
 let pointdecimals=0.14159
@@ -64,3 +63,88 @@ print(pi)
 
 let integerPi = Int(pi)
 print(integerPi)
+*/
+
+
+//CHAPTER TWO: BASIC OPERATORS
+/*
+//Assignment Operators
+let a = 3
+var b = 7 // must use var here because value used in let cannot be changed
+b = a // b is now equal to 3
+print(a)
+
+let (x,y) = (9,3)
+print(x)
+print(y)
+
+
+
+//Arithmetic operators
+let a = 9
+let b = 4
+let c = a + b //Addition
+let d = a - b //Subtraction
+let e = a * b //Multiplication
+let f = a / b //Division
+let g = a % b //remainder
+print(c)
+print(d)
+print(e)
+print(f)
+print(g)
+
+
+var h = "Aadil "
+var i = "Adheesh"
+let j = h + i
+print(j)
+
+
+
+
+//Compund assignment operators
+var a = 1
+a += 2  //Signifies a = a + 2
+print(a)
+
+
+
+
+//ComparisonOperators
+let a = "Aadil"
+let b = "Aadil"
+if a == b
+{
+    print("Hello World")
+}
+else
+{
+    print("Cannot print as a != b")
+}
+
+ 
+
+
+//Ternary Conditional
+//example which calculates the height for a table row. The row height should be 50 points taller than the content height if the row has a header, and 20 points taller if the row doesn’t have a header:
+
+let content_height = 40
+let hasheader = false
+let row_height = content_height + (hasheader ? 50 : 20)
+print(row_height)
+
+    //traditional way
+let ContentHeight = 50
+let HasHeader = true
+let RowHeight: Int
+if HasHeader
+{
+    RowHeight = ContentHeight + 50
+}
+else
+{
+    RowHeight = ContentHeight + 20
+}
+print(RowHeight)
+*/
