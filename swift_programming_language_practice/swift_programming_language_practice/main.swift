@@ -131,3 +131,24 @@ if i==1
 { print("working fine")
 }
 */
+
+
+//8. Tuples
+let http404error = (404,"Page not found")
+print(type(of: http404error))
+
+let(statusCode,errorMessage) = http404error
+print(statusCode)
+print("The error message is \(errorMessage)")
+
+
+let (justTheStatusCode,_) = http404error
+print(justTheStatusCode)
+
+print("The error code is \(http404error.0)")
+print("The error message is \(http404error.1)")
+
+let https200code = ( code:200, message: "Ok")
+print("The status code is\(https200code.code)")
+print("The message is \(https200code.message)")
+
