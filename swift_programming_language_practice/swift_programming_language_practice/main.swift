@@ -5,6 +5,8 @@
 //  Created by Aadil Adheesh on 21/08/22.
 //
 
+import Darwin
+
 //import Foundation
 
 //print("Hello, World!")
@@ -134,6 +136,7 @@ if i==1
 
 
 //8. Tuples
+/*
 let http404error = (404,"Page not found")
 print(type(of: http404error))
 
@@ -151,4 +154,47 @@ print("The error message is \(http404error.1)")
 let https200code = ( code:200, message: "Ok")
 print("The status code is\(https200code.code)")
 print("The message is \(https200code.message)")
+ */
 
+
+
+//9. Optionals & nil
+let possibleNumber = "123.hu"
+let convertedNumber = Int(possibleNumber)  //how are we declaring an optional in this example?
+print(convertedNumber)
+print(type(of: possibleNumber))
+print(type(of: convertedNumber))
+
+
+
+typealias name = (firstname:String, middlename: Optional<String>, lastname: String)
+
+var myname : name
+myname.firstname = "Aadil"
+myname.middlename = "Adheesh"
+myname.lastname = "Akbar"
+print(myname)
+
+var friendname : name
+friendname.firstname = "Afro"
+friendname.middlename = nil
+friendname.lastname = "Jack"
+print(friendname)
+print(type(of: friendname.middlename))
+
+
+typealias address = (Flatno : Int?, buildingName: String, pincode: Int)
+
+var myaddr : address
+myaddr.Flatno = 11
+myaddr.buildingName = "Sarita Nagari Phase - II"
+myaddr.pincode = 411030
+print(myaddr)
+
+
+//nil
+var serverResponseCode : Int?
+serverResponseCode = 444
+print(serverResponseCode) //Output -> Optional(444)
+print(serverResponseCode!) //Output -> 444
+print(type(of: serverResponseCode))
