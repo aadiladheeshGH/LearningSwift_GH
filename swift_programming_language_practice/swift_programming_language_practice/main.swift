@@ -97,15 +97,7 @@ print(integerPi)
 */
 
 
-//6. TYPE ALIASES
-typealias height = (ft: Int, inch: Int)
-var myht:height
-myht.ft = 5
-myht.inch = 9
-print(myht)
-print(type(of: myht))
-print(myht.ft)
-print(type(of: myht.ft))
+
 
 
 
