@@ -186,3 +186,45 @@ print(RowHeight)
 */
 
 
+/***LOGICAL OPERATORS***/
+
+//LOGICAL NOT OPERATOR
+/*let allowedEntry = true
+if !allowedEntry{           // denotes => if not allowedEntry
+    print("Access Denied")
+}
+if allowedEntry{
+    print("Access Granted")
+}
+*/
+
+//LOGICAL AND OPERATOR
+
+let enteredCode =  true
+let passedRetinaScan = true
+if enteredCode && passedRetinaScan{
+    print("Welcome")
+}
+else{
+    print("Access denied")
+}
+
+//LOGICAL OR OPERATOR
+
+ let hasdoorkey = true
+let hasOverridePwd = false
+if hasdoorkey || hasOverridePwd{
+    print("Access granted")
+}
+else{
+    print("Access denied")
+}
+
+//COMBINING ALL LOGOCAL OPERATORS
+if enteredCode && passedRetinaScan && hasdoorkey || hasOverridePwd{
+    print("You are allowed")
+}
+else{
+    print("get out")
+}
+
