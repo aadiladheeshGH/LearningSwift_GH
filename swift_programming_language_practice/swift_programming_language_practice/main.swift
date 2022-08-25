@@ -5,13 +5,16 @@
 //  Created by Aadil Adheesh on 21/08/22.
 //
 
-import Darwin
+//import Darwin
 
 //import Foundation
 
 //print("Hello, World!")
-
-
+/*
+ let value = 22/7
+print(value)
+print(type(of: value))
+*/
 
 //CHAPTER ONE: THE BASICS
 /*
@@ -104,7 +107,8 @@ print(integerPi)
 
 
 //6. TYPE ALIASES
-/*typealias height = (ft: Int, inch: Int)
+/*
+typealias height = (ft: Int, inch: Int)
 var myht:height
 myht.ft = 5
 myht.inch = 9
@@ -159,7 +163,8 @@ print("The message is \(https200code.message)")
 
 
 //9. Optionals & nil
-let possibleNumber = "123.hu"
+/*
+ let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)  //how are we declaring an optional in this example?
 print(convertedNumber)
 print(type(of: possibleNumber))
@@ -186,7 +191,7 @@ print(type(of: friendname.middlename))
 typealias address = (Flatno : Int?, buildingName: String, pincode: Int)
 
 var myaddr : address
-myaddr.Flatno = 11
+myaddr.Flatno = nil
 myaddr.buildingName = "Sarita Nagari Phase - II"
 myaddr.pincode = 411030
 print(myaddr)
@@ -198,3 +203,33 @@ serverResponseCode = 444
 print(serverResponseCode) //Output -> Optional(444)
 print(serverResponseCode!) //Output -> 444
 print(type(of: serverResponseCode))
+*/
+
+var new_age = Int("44.987") ?? 0
+print(new_age)
+print(type(of: new_age))
+
+
+
+/*
+ IMPLICITLY UNWRAPPED OPTIONAL
+ “An implicitly unwrapped optional is a normal optional behind the scenes, but can also be used like a non-optional value, without the need to
+unwrap the optional value each time it’s accessed.”
+ */
+
+/*
+var num1: Int! = 100        //using implicitly unwrapped optional here using the "!" mark
+print(num1)
+var num2:Int = num1
+print(num2)
+ 
+ 
+var num1: Int? = 100        //using optional here so we are having to unwrap the optional value every                               single time w
+print(num1)
+var num2:Int = num1!
+var num3:Int = num1!
+print(num2)
+*/
+
+
+
