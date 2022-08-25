@@ -205,10 +205,12 @@ print(serverResponseCode!) //Output -> 444
 print(type(of: serverResponseCode))
 */
 
-var new_age = Int("44.987") ?? 0
+//Nil coelescing operator ??
+/*
+var new_age = Int("44.87") ?? 0
 print(new_age)
 print(type(of: new_age))
-
+*/
 
 
 /*
@@ -218,18 +220,46 @@ unwrap the optional value each time it’s accessed.”
  */
 
 /*
-var num1: Int! = 100        //using implicitly unwrapped optional here using the "!" mark
+var num1: Int! = 100      //using implicitly unwrapped optional here using the "!" mark
 print(num1)
 var num2:Int = num1
 print(num2)
- 
- 
-var num1: Int? = 100        //using optional here so we are having to unwrap the optional value every                               single time w
+
+var num1: Int? = 100       //using optional here so we are having to unwrap the optional value every                               single time w
 print(num1)
 var num2:Int = num1!
 var num3:Int = num1!
 print(num2)
 */
 
+/*
+//examples from the book
+let possibleString: String? = "An optional string"  //normal optional string
+let forceString: String = possibleString!   // requires and exclamation mark to unwrap it
+print(forceString)
+
+let assumedString: String! = "An implicitly unwraped optional string"
+let implicitString: String = assumedString
+print(assumedString)
+*/
 
 
+
+//If Statements and forced unwrapping
+/*
+var convertednumber: Int? = nil
+if convertednumber != nil
+{
+    print("converted number contains some integer value")
+}
+else{
+    print("converted number contains nil value")
+}
+
+
+var ConvertedNumber: Int//? = nil
+if ConvertedNumber != nil
+{
+    print("Converted number is \(ConvertedNumber!)")
+}
+*/
