@@ -260,6 +260,58 @@ else{
 var ConvertedNumber: Int//? = nil
 if ConvertedNumber != nil
 {
-    print("Converted number is \(ConvertedNumber!)")
+    print("Converted number is \(ConvertedNumber)")
 }
-*/
+ */
+
+
+/***STRINGS AND CHARACTERS**/
+
+//Practice based on examples of Gaurav Sir
+var name = "Aadil"
+print(type(of: name))
+let oneAlphabet: Character = "A"
+print(type(of: oneAlphabet))
+print("'This is highlighted'")
+
+let character_count = name.count
+print("Total number of characters in the string is \(character_count)")
+
+print(name.first)       // prints Optional(A)
+print(name.last)        // prints Optional(l)
+print("bouncer".first)  // prints Optional(b) // Used to declare a variable an print simultaneuosly
+
+let first_index = name.startIndex
+print(name[name.startIndex])
+
+
+let middle_index = name.index(name.startIndex, offsetBy: 2)
+print(name[middle_index])
+
+
+let last_index = name.endIndex
+print(name[name.index(name.endIndex, offsetBy: -1)])
+//endIndex => End index is +1 from the last character position
+//print(name[name.endIndex]) //Fatal error: String index is out of bounds
+
+
+var animal = "Monkey"
+let firstindex = animal.startIndex
+print(animal[animal.startIndex])
+
+let fourth_index = animal.index(animal.startIndex, offsetBy: 3)
+print(animal[fourth_index])
+
+let lastindex = animal.index(animal.endIndex, offsetBy: -1)
+print(animal[last_index])
+
+
+var fruit = "Pineapple"
+let firstLetter = fruit.startIndex
+print(fruit[fruit.startIndex])
+
+let fifthLetter = fruit.index(fruit.startIndex, offsetBy: 4)
+print(fruit[fifthLetter])
+
+let lastLetter = fruit.index(fruit.endIndex, offsetBy: -1)
+print(fruit[lastLetter])
