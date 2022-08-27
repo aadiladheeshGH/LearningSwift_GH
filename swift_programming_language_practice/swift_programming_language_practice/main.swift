@@ -268,7 +268,8 @@ if ConvertedNumber != nil
 /***STRINGS AND CHARACTERS**/
 
 //Practice based on examples of Gaurav Sir
-var name = "Aadil"
+/*
+ var name = "Aadil"
 print(type(of: name))
 let oneAlphabet: Character = "A"
 print(type(of: oneAlphabet))
@@ -281,20 +282,19 @@ print(name.first)       // prints Optional(A)
 print(name.last)        // prints Optional(l)
 print("bouncer".first)  // prints Optional(b) // Used to declare a variable an print simultaneuosly
 
+//1.
 let first_index = name.startIndex
 print(name[name.startIndex])
 
-
 let middle_index = name.index(name.startIndex, offsetBy: 2)
 print(name[middle_index])
-
 
 let last_index = name.endIndex
 print(name[name.index(name.endIndex, offsetBy: -1)])
 //endIndex => End index is +1 from the last character position
 //print(name[name.endIndex]) //Fatal error: String index is out of bounds
 
-
+//2.
 var animal = "Monkey"
 let firstindex = animal.startIndex
 print(animal[animal.startIndex])
@@ -305,7 +305,7 @@ print(animal[fourth_index])
 let lastindex = animal.index(animal.endIndex, offsetBy: -1)
 print(animal[last_index])
 
-
+//3.
 var fruit = "Pineapple"
 let firstLetter = fruit.startIndex
 print(fruit[fruit.startIndex])
@@ -315,3 +315,36 @@ print(fruit[fifthLetter])
 
 let lastLetter = fruit.index(fruit.endIndex, offsetBy: -1)
 print(fruit[lastLetter])
+*/
+
+
+// STRING LITERALS
+/* let sentence = "This is an example of a string literal"
+print(type(of: sentence))
+*/
+
+//MULTILINE STRING LITERALS
+/*
+ let quotation = """
+    The White Rabbit put on his spectacles.  "Where shall I begin,
+        please your Majesty?" he asked.
+
+    "Begin at the beginning," the King said gravely, "and go on \
+    till you come to the end; then stop.
+"""
+print(quotation)
+*/
+
+//EXTENDED STRING DELIMITERS
+/*
+ var example = "line1 \nline2"
+print(example)
+var example2 = #"line1 \nline2"#   // Writing a string between two # will remove the special effects of a character
+print(example)
+
+
+var threeDoubleQuoteExample = #"""
+this example has three double quotes inside three double quotes : """
+"""#
+print(threeDoubleQuoteExample)
+*/
