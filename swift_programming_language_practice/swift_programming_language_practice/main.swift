@@ -348,3 +348,45 @@ this example has three double quotes inside three double quotes : """
 """#
 print(threeDoubleQuoteExample)
 */
+
+
+// STRING MUTABILITY
+/*
+ var variableString = "horse"
+variableString += " and carriage"
+print(variableString)
+
+let variableString2 = "horse"   //Error : Left side of mutating operator isn't mutable: 'variableString2' is a 'let' constant
+variableString2 += " and carriage"
+//print(variableString2)
+ */
+
+/*      //example for adding two string || example for using the append keyword
+ var word1 = "good"
+var word2 = " dog"
+var word3 = word1 + word2
+print(word3)    //prints good dog
+let exclamationmark: Character = "!"
+word3.append(exclamationmark)
+print(word3)    //prints good dog!
+ */
+
+/*let badstart = """
+one
+two
+"""
+
+let end = """
+three
+"""
+
+print(badstart + end)
+
+let goodstart = """
+one
+two
+
+"""
+
+print(goodstart + end)
+*/
