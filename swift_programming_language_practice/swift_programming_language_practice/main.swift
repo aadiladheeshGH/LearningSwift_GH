@@ -390,3 +390,12 @@ two
 
 print(goodstart + end)
 */
+
+
+//COMPARING STRINGS
+//1. String and character equality
+let sentence1 = "I am a good person"
+let sentence2 = "I am a good person"
+if sentence1 == sentence2{
+    print("Sentence1 and sentence2 are the same")
+}
