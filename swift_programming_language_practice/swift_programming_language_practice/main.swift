@@ -275,7 +275,7 @@ let oneAlphabet: Character = "A"
 print(type(of: oneAlphabet))
 print("'This is highlighted'")
 
-let character_count = name.count
+let character_count = name.coun  t
 print("Total number of characters in the string is \(character_count)")
 
 print(name.first)       // prints Optional(A)
@@ -394,8 +394,73 @@ print(goodstart + end)
 
 //COMPARING STRINGS
 //1. String and character equality
-let sentence1 = "I am a good person"
+/*
+ let sentence1 = "I am a good person"
 let sentence2 = "I am a good person"
 if sentence1 == sentence2{
     print("Sentence1 and sentence2 are the same")
 }
+
+let eAcuteQuestion = "caf\u{E9}"
+let combinedeAcuteQuestion = "caf\u{65}\u{301}"
+
+if eAcuteQuestion == combinedeAcuteQuestion{
+    print("Both strings w diff unicode characters are equal")
+}
+
+let latinCapitalLetterA = "\u{41}"
+let RussianCApitalLetterA = "\u{0410}"
+
+if latinCapitalLetterA == RussianCApitalLetterA{
+    print("They are equal")
+}
+else{
+    print("They are not equal")
+}
+*/
+
+//2. Prefix and Suffix Equality
+/*
+ let name_1 = "Aadil"
+let name_2 = "Aadil Adheesh"
+print(name_1.hasSuffix(name_2))     //prints false
+print(name_2.hasPrefix(name_1))     //prints true
+*/
+
+/*
+ let romeoAndJuliet = [
+    "Act 1 Scene 1: Verona, A public place",
+    "Act 1 Scene 2: Capulet's mansion",
+    "Act 1 Scene 3: A room in Capulet's mansion",
+    "Act 1 Scene 4: A street outside Capulet's mansion",
+    "Act 1 Scene 5: The Great Hall in Capulet's mansion",
+    "Act 2 Scene 1: Outside Capulet's mansion",
+    "Act 2 Scene 2: Capulet's orchard",
+    "Act 2 Scene 3: Outside Friar Lawrence's cell",
+    "Act 2 Scene 4: A street in Verona",
+    "Act 2 Scene 5: Capulet's mansion",
+    "Act 2 Scene 6: Friar Lawrence's cell"
+]
+
+var sceneCount = 0
+for scene in romeoAndJuliet{
+    if scene.hasPrefix("Act 1"){
+        sceneCount += 1
+    }
+}
+print("Total number of scenes in Act 1 is \(sceneCount)")
+
+var CapuletsMansion = 0
+var LawrenceCell = 0
+
+for scene in romeoAndJuliet{
+    if scene.hasSuffix("Capulet's mansion"){
+        CapuletsMansion += 1
+    }
+    
+    if scene.hasSuffix("Friar Lawrence's cell"){
+        LawrenceCell += 1
+    }
+}
+print("\(CapuletsMansion) Mansion scenes & \(LawrenceCell) Lawrence cell scenes")
+*/
