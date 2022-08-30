@@ -392,6 +392,39 @@ print(goodstart + end)
 */
 
 
+
+
+//STRING INDICES
+/*
+let greeting = "good morning"
+print(greeting[greeting.startIndex])        //prints g
+print(greeting[greeting.index(after: greeting.startIndex)])     //prints o
+print(greeting[greeting.index(before: greeting.endIndex)])      //prints g
+let letterofSecondword = greeting.index(greeting.startIndex, offsetBy: 5)
+print(greeting[letterofSecondword])                                //prints m
+*/
+
+/*for index in greeting.indices {                            /*** Rectify Error in these 3 lines of code*/
+    print(("\(greeting[index])", terminator : "")
+    }
+*/
+//Inserting and removing
+var welcome = "Hello"
+welcome.insert("!", at: welcome.endIndex)
+print(welcome)              //prints Hello!
+welcome.insert(contentsOf: " There", at: welcome.index(before: welcome.endIndex))
+print(welcome)              //prints Hello There!
+
+// TO REMOVE AT A PARTICULAR INDICE                                             /*** red flagged in book*/
+//welcome.remove(at: welcome.Index(String.Index, offsetBy: -1))
+//print(welcome)
+//let range = welcome.Index(welcome.index, offsetBy: -6) ..< welcome.endIndex
+//welcome.removeSubrange(range)
+//print(welcome)
+
+
+
+
 //COMPARING STRINGS
 //1. String and character equality
 /*
@@ -463,4 +496,16 @@ for scene in romeoAndJuliet{
     }
 }
 print("\(CapuletsMansion) Mansion scenes & \(LawrenceCell) Lawrence cell scenes")
+*/
+
+
+//RANDOM EXAMPLE
+/*
+ var s = String(repeating: "ab", count: 10)
+print(s)            //prints abababababababababab
+s += "gg"
+print(s)            //prints ababababababababababgg
+s.append("z")       //appends z
+s.insert("q", at: s.index(s.startIndex, offsetBy: 3))       //inserts q at specified value
+print(s)
 */
