@@ -539,4 +539,16 @@ for (animalname,legs) in numberoflegs{
 }
 */
 
-
+//IF Statement
+/*
+ var temperatureinfahrenheit = 48
+if temperatureinfahrenheit <= 38{
+    print("It's very cold outside")
+}
+else if temperatureinfahrenheit >= 86{
+    print("It's very hot, wear a sunscreen")
+}
+else{
+    print("It's not that cold, wear a t-shirt")
+}
+*/
