@@ -409,12 +409,13 @@ print(greeting[letterofSecondword])                                //prints m
     }
 */
 //Inserting and removing
-var welcome = "Hello"
+/*
+ var welcome = "Hello"
 welcome.insert("!", at: welcome.endIndex)
 print(welcome)              //prints Hello!
 welcome.insert(contentsOf: " There", at: welcome.index(before: welcome.endIndex))
 print(welcome)              //prints Hello There!
-
+*/
 // TO REMOVE AT A PARTICULAR INDICE                                             /*** red flagged in book*/
 //welcome.remove(at: welcome.Index(String.Index, offsetBy: -1))
 //print(welcome)
@@ -509,3 +510,33 @@ s.append("z")       //appends z
 s.insert("q", at: s.index(s.startIndex, offsetBy: 3))       //inserts q at specified value
 print(s)
 */
+
+
+
+
+
+
+/***CONTROL FLOW***/
+
+//FOR-IN LOOPS
+
+/*
+ let names = ["Alex", "Jack", "Ryan", "Moby"]
+for name in names{
+    print("Hello \(name)")
+}
+*/
+
+/*let numberoflegs = ["spider":8, "ant":6, "cow":4]
+for (animalname,legs) in numberoflegs{
+    print("Animal \(animalname) has \(legs) number of legs")
+}
+*/
+
+/*
+ for index in 1...5{
+    print("index\(index) times 5 is \(index*5)")
+}
+*/
+
+
