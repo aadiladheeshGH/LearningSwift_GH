@@ -213,6 +213,35 @@ print(type(of: new_age))
 */
 
 
+
+//OPTIONAL BINDING
+//1. Example 1
+let possiblenumber = "123"
+let convertednumber = Int(possiblenumber)
+print(type(of: convertednumber))
+
+if let actualnumber = Int(possiblenumber){
+    print("The String \(possiblenumber) has an integer value \(convertednumber)")
+}
+else{
+    print("The string\(possiblenumber) does not have any integer value")
+}
+
+//2. Example 2
+if let firstnumber = Int("4"), let secondnumber = Int("44"), firstnumber<secondnumber && secondnumber<100
+{
+    print("\(firstnumber)<\(secondnumber)<100")
+}
+
+
+if let FirstNumber = Int("45"){
+    if let SecondNumber = Int("77"){
+        if FirstNumber < SecondNumber && SecondNumber < 100{
+            print("\(FirstNumber)<\(SecondNumber)<100" )
+        }
+    }
+}
+
 /*
  IMPLICITLY UNWRAPPED OPTIONAL
  “An implicitly unwrapped optional is a normal optional behind the scenes, but can also be used like a non-optional value, without the need to
