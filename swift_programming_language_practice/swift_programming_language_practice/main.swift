@@ -5,6 +5,8 @@
 //  Created by Aadil Adheesh on 21/08/22.
 //
 
+import Darwin
+
 //import Darwin
 
 //import Foundation
@@ -395,34 +397,43 @@ print(goodstart + end)
 
 
 //STRING INDICES
-/*
-let greeting = "good morning"
-print(greeting[greeting.startIndex])        //prints g
+
+//let greeting = "good morning"
+/*print(greeting[greeting.startIndex])        //prints g
 print(greeting[greeting.index(after: greeting.startIndex)])     //prints o
 print(greeting[greeting.index(before: greeting.endIndex)])      //prints g
 let letterofSecondword = greeting.index(greeting.startIndex, offsetBy: 5)
 print(greeting[letterofSecondword])                                //prints m
 */
 
-/*for index in greeting.indices {                            /*** Rectify Error in these 3 lines of code*/
-    print(("\(greeting[index])", terminator : "")
+/*for index in greeting.indices {
+    print("\(greeting[index])", terminator : "   ")
     }
 */
 //Inserting and removing
-/*
- var welcome = "Hello"
+
+/*var welcome = "Hello"
 welcome.insert("!", at: welcome.endIndex)
 print(welcome)              //prints Hello!
 welcome.insert(contentsOf: " There", at: welcome.index(before: welcome.endIndex))
 print(welcome)              //prints Hello There!
 */
-// TO REMOVE AT A PARTICULAR INDICE                                             /*** red flagged in book*/
-//welcome.remove(at: welcome.Index(String.Index, offsetBy: -1))
-//print(welcome)
-//let range = welcome.Index(welcome.index, offsetBy: -6) ..< welcome.endIndex
-//welcome.removeSubrange(range)
-//print(welcome)
 
+// TO REMOVE AT A PARTICULAR INDICE                                             /*** red flagged in book*/
+
+//welcome.remove(at: welcome.Index(welcome.endIndex, offsetBy: -1))   //Can i remove a single character from a string using this method
+//print(welcome)
+/*let range = welcome.Index(welcome.index, offsetBy: -6) ..< welcome.endIndex
+welcome.removeSubrange(range)
+print(welcome)
+*/
+
+/*welcome.remove(at: welcome.index(before:welcome.endIndex))
+print(welcome)
+let range = welcome.index(welcome.endIndex, offsetBy: -6)..<welcome.endIndex
+welcome.removeSubrange(range)
+print(welcome)
+*/
 
 
 
@@ -551,4 +562,93 @@ else if temperatureinfahrenheit >= 86{
 else{
     print("It's not that cold, wear a t-shirt")
 }
+*/
+
+
+
+//While & Repeat while loops
+//Example 1
+/*
+ var counter = 0
+while counter<10 {
+    print(counter)
+    counter += 1
+}
+
+repeat{
+    print(counter)
+    counter += 1
+}   while counter < 10
+*/
+
+//Example 2 - program to display numbers from 1 to 5
+/*
+ var i = 1, n = 5
+while (i<=n){
+    print(i)
+    i += 1
+}
+
+//Example 3 - program to display game level
+var presentlevel: Int = 0, finallevel: Int = 5
+let gameCompleted = true
+
+repeat{
+        
+        if gameCompleted{
+    print("You have comleted level\(presentlevel)")
+    presentlevel += 1
+}
+}while (presentlevel<=finallevel)
+print("Level ends")
+*/
+
+//Example 4 - Snake and ladders example from the book
+//While loop
+/*
+let finalsquare = 25
+var board = [Int](repeating: 0, count: finalsquare + 1)
+//var board2 = Array.init(repeating: 0, count: finalsquare + 1)
+
+board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+
+var square = 0
+var diceRoll = 0
+
+//let dice = Int.random(in: 1..<7)
+//print("dice: \(dice)")
+
+while square < finalsquare{
+    diceRoll += 1   //roll the dice
+    if diceRoll==7 {
+        diceRoll = 1
+    }
+    square += diceRoll  //moving places on board as per the diceRoll
+    if square < board.count{
+        square += board[square]
+    }
+}
+print("Gameover!")
+*/
+
+
+//RepeatWhile - Example 4
+/*
+ let finalSquare = 25
+var board = [Int](repeating: 0, count: finalSquare + 1)
+
+board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02
+board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08
+
+var square = 0
+var DiceRoll = 0
+
+ repeat{
+    square += board[square] //move up or down for a snake or a ladder
+    DiceRoll += 1   //Roll the dice
+    if DiceRoll == 7 { DiceRoll = 1}
+    square += DiceRoll
+}   while square < finalSquare
+print("Game Over!")
 */
