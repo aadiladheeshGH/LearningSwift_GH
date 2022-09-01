@@ -652,3 +652,61 @@ var DiceRoll = 0
 }   while square < finalSquare
 print("Game Over!")
 */
+
+
+//Mixed xamples from class
+
+ let eAcute: Character =  "\u{E9}"
+print(eAcute)
+let combinedEAcute: Character = "\u{65}\u{301}"
+print(combinedEAcute)
+print(eAcute==combinedEAcute)
+
+let name_1 = "Aadil"
+for (ele,idx) in name_1.enumerated(){       //Enumerated gives us the index
+    print(idx, ele, terminator: "   ")
+}
+for CodeUnit in name_1.utf8{
+    print("\(CodeUnit)", terminator: " ")      //Each unicode caharacter is represneted using a code point
+}
+print("\n")
+for asciip in name_1{
+    print(asciip.asciiValue)
+}
+
+for codep in "🥲".utf8{
+    print(codep, terminator: " ")
+}
+for codep in "🥹".unicodeScalars{
+    print(codep, terminator: " ")
+    print(type(of: codep), terminator: "\n")
+}
+
+let chars: [Character] = ["a", " ", "™"]
+for ch in chars {
+    print(ch, "-->", ch.asciiValue)
+}
+for ch in chars {
+    print(ch, "-->", ch.utf8)
+    print(ch, "-->", ch.utf8.first) //prints the first element of the collection
+}
+
+
+let fourthindex = name_1.index(name_1.startIndex, offsetBy: 3)
+for idx in name_1[...fourthindex]{
+    print(idx)
+}
+for idx in name_1[fourthindex...]{
+    print(idx)
+}
+
+for asciip in name_1{
+    if let val = asciip.asciiValue{        //example of optional binding
+        print(val, terminator: ",")
+    }
+}
+ 
+
+
+
+
