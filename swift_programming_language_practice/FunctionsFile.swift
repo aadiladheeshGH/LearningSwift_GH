@@ -19,3 +19,4 @@ func inout_swap(param1:inout Int, param2:inout Int){
 func swap(param1: Int, param2: Int) -> (Int,Int){   //Same example but without using IN Out parameters
     return (param2, param1)
 }
+
