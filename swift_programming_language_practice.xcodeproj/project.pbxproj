@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B80C26B428B2993900BA238C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80C26B328B2993900BA238C /* main.swift */; };
+		B83CB2732908173D0045BEE5 /* AirTravelprotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83CB2722908173D0045BEE5 /* AirTravelprotocol.swift */; };
 		B8B4644F28D04857000EDE21 /* FunctionsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4644E28D04857000EDE21 /* FunctionsFile.swift */; };
 		B8B4645128D09B43000EDE21 /* ClosuresFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B4645028D09B43000EDE21 /* ClosuresFile.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		B80C26B028B2993900BA238C /* swift_programming_language_practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_programming_language_practice; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80C26B328B2993900BA238C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B83CB2722908173D0045BEE5 /* AirTravelprotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirTravelprotocol.swift; sourceTree = "<group>"; };
 		B8B4644E28D04857000EDE21 /* FunctionsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsFile.swift; sourceTree = "<group>"; };
 		B8B4645028D09B43000EDE21 /* ClosuresFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosuresFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				B80C26B328B2993900BA238C /* main.swift */,
+				B83CB2722908173D0045BEE5 /* AirTravelprotocol.swift */,
 			);
 			path = swift_programming_language_practice;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				B8B4645128D09B43000EDE21 /* ClosuresFile.swift in Sources */,
 				B80C26B428B2993900BA238C /* main.swift in Sources */,
+				B83CB2732908173D0045BEE5 /* AirTravelprotocol.swift in Sources */,
 				B8B4644F28D04857000EDE21 /* FunctionsFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
