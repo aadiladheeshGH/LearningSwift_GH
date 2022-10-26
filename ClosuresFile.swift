@@ -24,11 +24,11 @@ var addOrSubtractClosureOptional : ((Int, Int, Bool) -> Int)? = {Op1, Op2, choic
 }
 
 
-var simpleClosure:() -> () =  {[externalVal, externalVal1] in
-    print("External Value is \(externalVal)")
-    print("External Value 1 is \(externalVal1)")
-    print(type(of: externalVal))
-}
+//var simpleClosure:() -> () =  {[externalVal, externalVal1] in
+//    print("External Value is \(externalVal)")
+//    print("External Value 1 is \(externalVal1)")
+//    print(type(of: externalVal))
+//}
 
 
 func trailingclosureExample(arg1: Int, arg2 : Int, trailClosureArg:()->())  {

@@ -79,7 +79,7 @@ struct sTicket:TravelDocProtocol{
     var flightTime: JourneyTime = .init(departureTime: Date(), arrivalTime: Date(), forTravelType: .Air)
 }
 
-var new_sBoardingPass = sBoardingPass(PassengerName: "aaa", flightPNR: "aa", SeatNo: "4c", flightTime: <#T##JourneyTime#>)
+//var new_sBoardingPass = sBoardingPass(PassengerName: "aaa", flightPNR: "aa", SeatNo: "4c", flightTime: <#T##JourneyTime#>)
 //No need to provide an initializer for structures
 //It Shows init parameters automatically. This feature is called as MEMBER WISE INITIALIIZER
 
@@ -107,9 +107,10 @@ class cTicket: cBaseTravelDoc{
     override var travelDocType: OfficialTravelDocType{.Ticket}
 }
 
-var baseDoc = cBaseTravelDoc.init(PassengerName: <#T##String#>, flightPNR: <#T##String#>, SeatNo: <#T##String#>, flightTime: <#T##JourneyTime#>)
+//var baseDoc = cBaseTravelDoc.init(PassengerName: <#T##String#>, flightPNR: <#T##String#>, SeatNo: <#T##String#>, flightTime: <#T##JourneyTime#>)
 //had to create an initializer for swift to prompt parameters
-var new_cBoardingPass = cBoardingPass.init(PassengerName: <#T##String#>, flightPNR: <#T##String#>, SeatNo: <#T##String#>, flightTime: <#T##JourneyTime#>)
+
+//var new_cBoardingPass = cBoardingPass.init(PassengerName: <#T##String#>, flightPNR: <#T##String#>, SeatNo: <#T##String#>, flightTime: <#T##JourneyTime#>)
 //Variable new_cBoardingPass inherited intitalizers from parent class i.e cBaseTravelDoc
 
 protocol AirtravelProtocol{
@@ -125,38 +126,68 @@ protocol AirtravelProtocol{
 }
 
 
-class CommuteA: AirtravelProtocol{
-    var ticket: String
-    
-    var ID: IDType
-    
-    var boardingPass: sBoardingPass?
-    
-    init(ticket: String, ID: IDType) {
+//class CommuteA: AirtravelProtocol{
+//    var ticket: String
+//
+//    var ID: IDType
+//
+//    var boardingPass: sBoardingPass?
+//
+//    init(ticket: String, ID: IDType) {
+//
+//    }
+//
+//    func bookAticket() -> String {
+//        <#code#>
+//    }
+//
+//    func commuteToAirport() -> Bool {
+//        <#code#>
+//    }
+//
+//    func baggageCheckin() -> Bool {
+//        <#code#>
+//    }
+//
+//    func boarding() -> Bool {
+//        <#code#>
+//    }
+//
+//    func deboarding() -> Bool {
+//        <#code#>
+//    }
+//
+//    func baggageCheckout() -> Bool {
+//        <#code#>
+//    }
+//}
 
-    }
-    
-    func bookAticket() -> String {
-        <#code#>
-    }
-    
-    func commuteToAirport() -> Bool {
-        <#code#>
-    }
-    
-    func baggageCheckin() -> Bool {
-        <#code#>
-    }
-    
-    func boarding() -> Bool {
-        <#code#>
-    }
-    
-    func deboarding() -> Bool {
-        <#code#>
-    }
-    
-    func baggageCheckout() -> Bool {
-        <#code#>
-    }
+
+
+
+
+//EXAMPLES FROM THE BOOK
+struct Resolution{
+    var width = 0
+    var height = 0
 }
+
+class VideoMode{
+    var resolution = Resolution()
+    var interlaced = false
+    var frameRate = 0.0
+    var name : String?
+}
+
+let someResolution = Resolution()
+let someVideoMode = VideoMode()
+
+//print("The width of Resolution is \(someResolution.width)")
+
+//memberwise Initializers for Structure Types
+let vga = Resolution.init(width: 640, height: 480)
+
+//Structures and enumerations are value Types
+let hd = Resolution(width: 1080, height: 1920)
+var cinema = hd
+
