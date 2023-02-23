@@ -191,3 +191,5 @@ let vga = Resolution.init(width: 640, height: 480)
 let hd = Resolution(width: 1080, height: 1920)
 var cinema = hd
 
+// just a practice change for git
+
